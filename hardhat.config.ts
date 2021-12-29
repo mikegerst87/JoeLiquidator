@@ -10,7 +10,7 @@ import "@nomiclabs/hardhat-waffle"
 // https://hardhat.org/hardhat-network/
 // https://hardhat.org/guides/mainnet-forking.html
 const FORK_FUJI = false
-const FORK_MAINNET = false
+const FORK_MAINNET = true
 const forkingData = FORK_FUJI ? {
   url: 'https://api.avax-test.network/ext/bc/C/rpc',
 } : FORK_MAINNET ? {
@@ -51,13 +51,16 @@ export default {
       },
       {
         version: "0.8.0"
+      },
+      {
+        version: "0.8.2"
       }
     ]
   },
   networks: {
     hardhat: {
       gasPrice: 225000000000,
-      chainId: !forkingData ? 43112 : undefined, //Only specify a chainId if we are not forking
+      chainId: 43114,
       forking: forkingData
     },
     local: {

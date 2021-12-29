@@ -4,15 +4,19 @@
     "@nomiclabs/hardhat-ethers": "^2.0.2",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
     "@openzeppelin/contracts": "^4.3.0",
+    "@traderjoe-xyz/lending": "https://github.com/mikegerst87/joe-lending.git",
     "@types/chai": "^4.2.21",
     "@types/mocha": "^9.0.0",
     "@types/node": "^16.7.1",
+    "@urql/core": "^2.3.6",
     "avalanche": "3.8.5",
     "chai": "^4.3.4",
     "ethereum-waffle": "^3.4.0",
     "ethereumjs-tx": "^2.1.2",
     "ethers": "^5.4.5",
+    "graphql": "^16.2.0",
     "hardhat": "2.6.1",
+    "isomorphic-unfetch": "^3.1.0",
     "ts-node": "^10.2.1",
     "web3": "^1.5.2"
   },
@@ -45,6 +49,7 @@
     "fund-cchain-addresses": "npx hardhat run scripts/fund-cchain-addresses.js"
   },
   "dependencies": {
+    "hardhat-shorthand": "^1.0.0",
     "typescript": "^4.3.5"
   },
   "engines": {
